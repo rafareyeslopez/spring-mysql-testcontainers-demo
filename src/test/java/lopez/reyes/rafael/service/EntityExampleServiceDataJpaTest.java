@@ -39,9 +39,9 @@ import lopez.reyes.rafael.repository.EntityExampleRepository;
 @DataJpaTest
 @ActiveProfiles("junit")
 @AutoConfigureTestDatabase(replace = Replace.NONE)
-@ContextConfiguration(initializers = { EntityExampleServiceTestDataJpa.Initializer.class })
+@ContextConfiguration(initializers = { EntityExampleServiceDataJpaTest.Initializer.class })
 //@SpringBootApplication(exclude = { HibernateJpaAutoConfiguration.class })
-public class EntityExampleServiceTestDataJpa {
+public class EntityExampleServiceDataJpaTest {
 
 	private static MySQLContainer mysql;
 	private static DataSource dataSource;
